@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
 router.route('/').get((req, res) => {
-    msg = `Hello ${req.query.name || "World"} from get request!`;
+    msg = `Hello ${req.query.name || "World"} from get request j!`;
     res.json({ msg });
 })
 

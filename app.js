@@ -15,6 +15,7 @@ app.use(urlencoded({ extended: false}));
 app.use(cors(corsOptions));
 
 app.use(router);
+
 app.use('/home', (req, res)=>{
     res.sendFile(path.join(__dirname + '/src/vistas/index.html'));
 })
